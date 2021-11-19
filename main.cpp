@@ -1,9 +1,16 @@
 #include <iostream>
 using namespace std;
 
-void StampaMacchina(string Modello, string Marca, int Anno){
-    cout << "Il modello della macchina è " << Modello << endl;
+/**
+ * @brief 
+ * 
+ * @param Marca è la marca della macchina
+ * @param Modello è il modello della macchina
+ * @param Anno è l'anno di produzione
+ */
+void StampaMacchina(string Marca, string Modello, int Anno){
     cout << "La marca è " << Marca << endl;
+    cout << "Il modello della macchina è " << Modello << endl;
     cout << "L'anno di produzione è " << Anno << endl;
 }
 
@@ -23,7 +30,7 @@ int main(){
     cin >> car.modello;
     cout << "Inseriere anno creazione: ";
     cin >> car.annata;
- 
+    
 
     StampaMacchina(car.marca, car.modello, car.annata);
 
@@ -36,6 +43,5 @@ int main(){
     cout << "Inseriere anno creazione: ";
     cin >> car2.annata;
 
-  
-    StampaMacchina(car2.marca, car2.modello, car2.annata);
+    StampaMacchina(car2.marca, car2.modello, car2.annata);   
 }
